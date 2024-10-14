@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/loaders/GLTFLoader.js';
 
 // Create a scene
 const scene = new THREE.Scene();
@@ -22,7 +22,7 @@ let rotationSpeed = 0.01; // Speed of rotation
 let rotationDirection = 1; // 1 for clockwise, -1 for counter-clockwise
 const maxRotationAngle = Math.PI; // 90 degrees in radians
 
-loader.load('MacBook_Air_13_.glb', function (gltf) {
+loader.load('./src/assets/MacBook_Air_13_.glb', function (gltf) {
     model = gltf.scene; 
     model.scale.set(0.65, 0.65, 0.65);
     model.position.set(0, 0, 0);

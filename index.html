@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trey Tuscai</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="main.js" defer></script>
+    <link rel="stylesheet" href="./src/style.css">
+    <script type="module" src="./src/main.js" defer></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+                "GLTFLoader": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/loaders/GLTFLoader.js"
+            }
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Federo&family=Notable&family=Pirata+One&display=swap" rel="stylesheet">
