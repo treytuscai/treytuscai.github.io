@@ -5,9 +5,9 @@ import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.169.0/examples/
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({ alpha: true });
-renderer.setSize(700, 450);
-document.body.appendChild(renderer.domElement);
-document.getElementById('3d-container').appendChild(renderer.domElement);
+renderer.setSize(1000, 500);
+const container = document.getElementById('scene-container');
+container.insertBefore(renderer.domElement, container.firstChild);
 
 // Scene handling
 scene.background = null; 
@@ -25,7 +25,8 @@ const maxRotationAngle = Math.PI; // 90 degrees in radians
 loader.load('./src/assets/MacBook_Air_13_.glb', function (gltf) {
     model = gltf.scene; 
     model.scale.set(0.65, 0.65, 0.65);
-    model.position.set(0, 0, 0);
+    model.position.set(-1.5, -1, -3.5);
+    model.rotation.y = 0
 
     // Set the color of the materials
     model.traverse((child) => {
@@ -42,8 +43,8 @@ loader.load('./src/assets/MacBook_Air_13_.glb', function (gltf) {
 });
 
 // Set camera position
-camera.position.set(2, 3, 2.75); 
-camera.lookAt(0, 0, 0);
+camera.position.set(1, 1, 0); 
+camera.lookAt(0, -1, -4);
 
 // Render loop
 function animate() {
