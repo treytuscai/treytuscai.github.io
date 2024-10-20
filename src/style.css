@@ -275,6 +275,11 @@ body {
     object-fit: cover;
     filter: grayscale(1);
     border: 2px solid #47EEDC;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover{
+    transform: scale(1.05);
 }
 
 .projects-title-container {
@@ -343,12 +348,12 @@ body {
     border: 2px solid darkgray;
     border-radius: 10px;
     filter: grayscale(1);
-    transition: transform 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease;
 }
 
 #project-photo:hover{
     cursor:pointer;
-    transform: scale(1.05); /* Enlarge the image */
+    transform: scale(1.05);
 }
 
 .more-git {
