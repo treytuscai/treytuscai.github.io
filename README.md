@@ -12,7 +12,7 @@ Visit my personal site here: [tvtusc25.github.io](https://tvtusc25.github.io)
 ## Technologies Used
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- Bootstrap 5
 - GitHub Pages for hosting
 
 ## Setup and Installation
