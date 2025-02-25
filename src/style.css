@@ -4,6 +4,18 @@ body {
     font-family: 'Federo', sans-serif;
 }
 
+/* Progress bar */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: #47EEDC;
+    width: 0%;
+    z-index: 10000;
+    transition: width 0.2s ease-out;
+}
+
 /* Navbar */
 .navbar-custom {
     backdrop-filter: blur(10px);
@@ -31,11 +43,14 @@ body {
 /* Hero Section */
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, #1a1a1a, #000);
+    background: radial-gradient(circle, rgba(71, 238, 220, 0.15) 0%, rgba(0, 0, 0, 0.9) 100%), 
+                url('./src/assets/abstract-shapes.svg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero h1 {
@@ -51,6 +66,15 @@ body {
     margin-bottom: 2rem;
 }
 
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero h1, .hero p {
+    animation: slideUp 1s ease-out;
+}
+
 .hero .btn {
     font-size: 1.2rem;
     padding: 0.75rem 2rem;
@@ -64,6 +88,8 @@ body {
     background: #47EEDC;
     color: #000;
 }
+
+/* About Section*/
 
 .about-card {
     display: flex;
@@ -83,7 +109,7 @@ body {
 
 .about-text {
     flex: 1;
-    padding-right: 30px;
+    padding: 30px;
     color: white;
 }
 
@@ -112,7 +138,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Responsive Tweaks */
 @media (max-width: 768px) {
     .about-card {
         flex-direction: column;
@@ -130,7 +155,6 @@ body {
     }
 }
 
-/* About Section */
 .about {
     padding: 4rem 0;
 }
@@ -147,10 +171,100 @@ body {
     line-height: 1.8;
 }
 
+.custom-shape-divider-bottom {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.custom-shape-divider-bottom .shape-fill {
+    fill: #47EEDC;
+}
+
+.custom-shape-divider-top {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+    transform: scaleY(-1);
+}
+
+.custom-shape-divider-top .shape-fill {
+    fill: #47EEDC;
+}
+
+/* Marquee Section */
+.skills-marquee {
+    font-family: 'Notable', sans-serif;
+    font-size: 1.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding: 15px 0;
+    position: relative;
+}
+
+/* Container to hold the moving text */
+.marquee-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Moving text */
+.marquee {
+    display: flex;
+    gap: 50px; /* Ensures spacing between loops */
+    animation: marqueeScroll 20s linear infinite;
+    min-width: 200%;
+}
+
+/* Text inside the marquee */
+.marquee span {
+    font-size: 1.5rem;
+    font-family: 'Notable', sans-serif;
+    color: white;
+    display: inline-block;
+    padding-right: 50px;
+}
+
+/* 🔄 Smooth Scrolling Effects */
+@keyframes marqueeScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Moving text */
+.marqueeRev {
+    display: flex;
+    gap: 50px; /* Ensures spacing between loops */
+    animation: marqueeScrollRev 20s linear infinite;
+    min-width: 200%;
+}
+@keyframes marqueeScrollRev{
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+
 /* Publications Section */
 .publications {
     padding: 4rem 0;
-    background: #111;
 }
 
 .publications h2 {
@@ -194,6 +308,21 @@ body {
 .card-img-top:hover {
     transform: scale(1.05);
     filter: grayscale(0);
+    cursor: pointer;
+}
+.projects a.btn {
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    border: 2px solid #47EEDC;
+    background: transparent;
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+    margin: 0.5rem;
+}
+
+.projects a.btn:hover {
+    background: #47EEDC;
+    color: #000;
 }
 
 /* Contact Section */
