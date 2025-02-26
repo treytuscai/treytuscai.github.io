@@ -267,7 +267,7 @@ body {
 .marquee {
     display: flex;
     gap: 50px; /* Ensures spacing between loops */
-    animation: marqueeScroll 20s linear infinite;
+    animation: marqueeScroll 60s linear infinite;
     min-width: 200%;
 }
 
@@ -290,7 +290,7 @@ body {
 .marqueeRev {
     display: flex;
     gap: 50px; /* Ensures spacing between loops */
-    animation: marqueeScrollRev 20s linear infinite;
+    animation: marqueeScrollRev 50s linear infinite;
     min-width: 200%;
 }
 @keyframes marqueeScrollRev{
