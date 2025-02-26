@@ -147,4 +147,125 @@
                     Mechanics •
                     Artificial Intelligence • Machine Learning • System Architecture • Operating Systems • Software
                     Testing •
-                    Debugging Techniques • Code Optimization • Performance Analys
+                    Debugging Techniques • Code Optimization • Performance Analysis • Project Management • Version
+                    Control •
+                    Agile Development • Client-Server Architecture • and More!
+                </span>
+                <span> <!-- Duplicate for infinite scrolling -->
+                    Data Structures • Algorithms • Algorithm Analysis • Data Analysis • Data Visualization • Programming
+                    Languages •
+                    Test-Driven Development • Computer Organization • Software Engineering • Neural Networks • Deep
+                    Learning •
+                    Generative AI • Game Design • Scrum • Software Development Life Cycle • Object-Oriented Programming
+                    • Graph Theory •
+                    Dynamic Programming • Statistical Analysis • User Interface Design • Game Development • Game
+                    Mechanics •
+                    Artificial Intelligence • Machine Learning • System Architecture • Operating Systems • Software
+                    Testing •
+                    Debugging Techniques • Code Optimization • Performance Analysis • Project Management • Version
+                    Control •
+                    Agile Development • Client-Server Architecture • and More!
+                </span>
+            </div>
+        </div>
+    </section> <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="text-center mb-5">Key Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100"> <img src="./src/assets/LandscapeAppPoster.jpeg" class="card-img-top"
+                            alt="Dowsing App" onclick="window.open('https://apple.co/3OxrJGw', '_blank')">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Dowsing: Discover & Review Water</h5>
+                            <p class="card-text text-center">iOS Application</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100"> <img src="./src/assets/DeepLearning.png" class="card-img-top"
+                            alt="DeepLearning"
+                            onclick="window.open('https://github.com/tvtusc25/DeepNeuralNetworks', '_blank')">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Deep Neural Networks</h5>
+                            <p class="card-text text-center">Deep Learning Library</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100"> <img src="./src/assets/devready.png" class="card-img-top"
+                            alt="DeepLearning" onclick="window.open('https://github.com/tvtusc25/DevReady', '_blank')">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">DevReady</h5>
+                            <p class="card-text text-center">Web Application (Coming Soon!)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100"> <img src="./src/assets/weatherapp.png" class="card-img-top"
+                            alt="DeepLearning"
+                            onclick="window.open('https://github.com/tvtusc25/WeatherApp', '_blank')">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Open Weather App</h5>
+                            <p class="card-text text-center">Web Application</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100"> <img src="./src/assets/shiftscheduler.png" class="card-img-top"
+                            alt="Coffeehouse Shift Scheduler"
+                            onclick="window.open('https://github.com/ryanmogauro/Scheduling-Project', '_blank')">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Shift Scheduler</h5>
+                            <p class="card-text text-center">Web Application</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- "And so much more..." GitHub Card -->
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <div class="text-center">
+                        <h5 class="fw-bold">And so much more...</h5>
+                        <a href="https://github.com/tvtusc25" class="btn" target="_blank">View More on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Contact Section -->
+    <div class="custom-shape-divider-top">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <section id="contact" class="contact text-center">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Let's connect and create something amazing!</p> <a href="mailto:ttuscai22@icloud.com" class="btn">Email
+                Me</a> <a href="https://www.linkedin.com/in/trey-tuscai" class="btn" target="_blank">LinkedIn</a>
+        </div>
+    </section> <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Trey Tuscai. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        VANTA.NET({
+          el: ".hero",
+          color: 0x47eedc,          
+          backgroundColor: 0x000000, 
+          points: 12.00,            
+          maxDistance: 20.00,       
+          spacing: 15.00
+        });
+      </script>
+    <script>
+        window.addEventListener('scroll', () => {
+            const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollPercent = (document.documentElement.scrollTop / docHeight) * 100;
+            document.getElementById('progress-bar').style.width = scrollPercent + '%';
+        });
+    </script>
+</body>
+
+</html>
