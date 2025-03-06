@@ -12,7 +12,7 @@ Visit my personal site here: [treytuscai.github.io](https://treytuscai.github.io
 ## Technologies Used
 - HTML5
 - CSS3
-- Bootstrap 5
+- Bootstrap 5.3
 - GitHub Pages for hosting
 
 ## Setup and Installation
