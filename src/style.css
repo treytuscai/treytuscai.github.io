@@ -366,6 +366,10 @@ body {
     transition: transform 0.3s, filter 0.3s;
 }
 
+.custom-height {
+    height: 68%; /* Adjust the height as needed */
+}
+
 .card-img-top:hover {
     transform: scale(1.05);
     filter: grayscale(0);
