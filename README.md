@@ -1,8 +1,8 @@
-# tvtusc.github.io
+# treytuscai.github.io
 This repository hosts my personal portfolio website, built using HTML, CSS, and JavaScript. It showcases my projects, skills, and professional background.
 
 ## Live Demo
-Visit my personal site here: [tvtusc25.github.io](https://tvtusc25.github.io)
+Visit my personal site here: [treytuscai.github.io](https://treytuscai.github.io)
 
 ## Features
 - Personal bio and professional background
@@ -20,11 +20,11 @@ To run this project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/tvtusc25/tvtusc25.github.io.git
+   git clone https://github.com/treytuscai/treytuscai.github.io.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd tvtusc.github.io
+   cd treytuscai.github.io
    ```
 3. Open `index.html` in your browser.
 
